@@ -16,7 +16,7 @@ const AuthRegister = ({ title, subtitle, subtext }) => (
         {subtext}
 
         <Box>
-            <Stack mb={3}>
+            <Stack mb={5}>
                 <Typography variant="subtitle1"
                     fontWeight={600} component="label" htmlFor='name' mb="5px">Name</Typography>
                 <CustomTextField id="name" variant="outlined" fullWidth />
@@ -27,6 +27,14 @@ const AuthRegister = ({ title, subtitle, subtext }) => (
 
                 <Typography variant="subtitle1"
                     fontWeight={600} component="label" htmlFor='password' mb="5px" mt="25px">Password</Typography>
+                <CustomTextField id="password" variant="outlined" fullWidth />
+
+                <Typography variant="subtitle1"
+                    fontWeight={600} component="label" htmlFor='priority' mb="5px" mt="25px">Priority</Typography>
+                <CustomTextField id="password" variant="outlined" fullWidth />
+
+                <Typography variant="subtitle1"
+                    fontWeight={600} component="label" htmlFor='phonenumber' mb="5px" mt="25px">PhoneNumber</Typography>
                 <CustomTextField id="password" variant="outlined" fullWidth />
             </Stack>
             <Button color="primary" variant="contained" size="large" fullWidth component={Link} to="/auth/login">
