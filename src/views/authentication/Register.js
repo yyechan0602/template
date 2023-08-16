@@ -35,12 +35,12 @@ const Register2 = () => (
         >
           <Card elevation={9} sx={{ p: 4, zIndex: 1, width: '100%', maxWidth: '500px' }}>
             <Box display="flex" alignItems="center" justifyContent="center">
-              <Logo />
+              건설현장
             </Box>
             <AuthRegister
               subtext={
                 <Typography variant="subtitle1" textAlign="center" color="textSecondary" mb={1}>
-                  Your Social Campaigns
+                  노동자 회원가입
                 </Typography>
               }
               subtitle={
