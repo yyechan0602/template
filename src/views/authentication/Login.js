@@ -39,7 +39,7 @@ const Login2 = () => {
           >
             <Card elevation={9} sx={{ p: 4, zIndex: 1, width: '100%', maxWidth: '500px' }}>
               <Box display="flex" alignItems="center" justifyContent="center">
-                <Logo />
+                건설현장 노동자 로그인
               </Box>
               <AuthLogin
                 subtext={
