@@ -85,12 +85,12 @@ const Contact = () => {
                             </TableCell>
                             <TableCell>
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Name
+                                    Position
                                 </Typography>
                             </TableCell>
                             <TableCell>
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Priority
+                                    classification
                                 </Typography>
                             </TableCell>
                             <TableCell align="right">
