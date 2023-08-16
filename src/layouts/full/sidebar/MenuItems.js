@@ -16,7 +16,7 @@ const Menuitems = [
     icon: IconLayoutDashboard,
     href: '/dashboard',
   },
-  {
+/*  {
     navlabel: true,
     subheader: 'Utilities',
   },
@@ -31,7 +31,7 @@ const Menuitems = [
     title: 'Shadow',
     icon: IconCopy,
     href: '/ui/shadow',
-  },
+  },*/
   {
     navlabel: true,
     subheader: 'Auth',

@@ -13,48 +13,57 @@ import DashboardCard from '../../../components/shared/DashboardCard';
 const products = [
     {
         id: "1",
-        name: "Sunil Joshi",
-        post: "Web Designer",
-        pname: "Elite Admin",
-        priority: "Low",
-        pbg: "primary.main",
-        budget: "3.9",
+        name: "김철수",
+        post: "팀장",
+        pname: "건설 안전관리 팀장",
+        priority: "일반",
+        pbg: "success.main",
+        pnum: "010-1234-5678",
     },
     {
         id: "2",
-        name: "Andrew McDownland",
-        post: "Project Manager",
-        pname: "Real Homes WP Theme",
-        priority: "Medium",
-        pbg: "secondary.main",
-        budget: "24.5",
+        name: "박민수",
+        post: "대리",
+        pname: "안전 세부 관리자",
+        priority: "일반",
+        pbg: "success.main",
+        pnum: "010-4924-5992",
     },
     {
         id: "3",
-        name: "Christopher Jamil",
-        post: "Project Manager",
-        pname: "MedicalPro WP Theme",
-        priority: "High",
-        pbg: "error.main",
-        budget: "12.8",
+        name: "김지은",
+        post: "사원",
+        pname: "집중 안전 교육 강사",
+        priority: "일반",
+        pbg: "success.main",
+        pnum: "010-1243-4124",
     },
     {
         id: "4",
-        name: "Nirav Joshi",
-        post: "Frontend Engineer",
-        pname: "Hosting Press HTML",
-        priority: "Critical",
+        name: "이서아",
+        post: "사원",
+        pname: "불시 안전 점검 관리자",
+        priority: "일반",
         pbg: "success.main",
-        budget: "2.4",
+        pnum: "010-4565-4122",
+    },
+    {
+        id: "5",
+        name: "이수혁",
+        post: "의무 소방대원",
+        pname: "소방사",
+        priority: "비상 연락망",
+        pbg: "error.main",
+        pnum: "010-1199-1199",
     },
 ];
 
 
-const ProductPerformance = () => {
+const Contact = () => {
     return (
 
-        <DashboardCard title="Product Performance">
-            <Box sx={{ overflow: 'auto', width: { xs: '280px', sm: 'auto' } }}>
+        <DashboardCard title="주요 연락망 및 비상 연락망">
+            <Box sx={{overflow: 'auto', width: {xs: '280px', sm: 'auto'}}}>
                 <Table
                     aria-label="simple table"
                     sx={{
@@ -86,7 +95,7 @@ const ProductPerformance = () => {
                             </TableCell>
                             <TableCell align="right">
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Budget
+                                    Phone Number
                                 </Typography>
                             </TableCell>
                         </TableRow>
@@ -143,7 +152,7 @@ const ProductPerformance = () => {
                                     ></Chip>
                                 </TableCell>
                                 <TableCell align="right">
-                                    <Typography variant="h6">${product.budget}k</Typography>
+                                    <Typography variant="h6">{product.pnum}</Typography>
                                 </TableCell>
                             </TableRow>
                         ))}
@@ -154,4 +163,4 @@ const ProductPerformance = () => {
     );
 };
 
-export default ProductPerformance;
+export default Contact;

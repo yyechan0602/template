@@ -5,7 +5,7 @@ import { Stack, Typography, Avatar, Fab } from '@mui/material';
 import { IconArrowDownRight, IconCurrencyDollar } from '@tabler/icons';
 import DashboardCard from '../../../components/shared/DashboardCard';
 
-const MonthlyEarnings = () => {
+const WeekendSchedule = () => {
   // chart color
   const theme = useTheme();
   const secondary = theme.palette.secondary.main;
@@ -83,4 +83,4 @@ const MonthlyEarnings = () => {
   );
 };
 
-export default MonthlyEarnings;
+export default WeekendSchedule;

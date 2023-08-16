@@ -5,7 +5,7 @@ import DashboardCard from '../../../components/shared/DashboardCard';
 import Chart from 'react-apexcharts';
 
 
-const SalesOverview = () => {
+const Unity = () => {
 
     // select
     const [month, setMonth] = React.useState('1');
@@ -90,7 +90,7 @@ const SalesOverview = () => {
 
     return (
 
-        <DashboardCard title="Sales Overview" action={
+        <DashboardCard title="Unity Contents" action={
             <Select
                 labelId="month-dd"
                 id="month-dd"
@@ -103,14 +103,9 @@ const SalesOverview = () => {
                 <MenuItem value={3}>May 2023</MenuItem>
             </Select>
         }>
-            <Chart
-                options={optionscolumnchart}
-                series={seriescolumnchart}
-                type="bar"
-                height="370px"
-            />
+
         </DashboardCard>
     );
 };
 
-export default SalesOverview;
+export default Unity;
